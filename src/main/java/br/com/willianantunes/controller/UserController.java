@@ -64,7 +64,7 @@ public class UserController
 		return modelAndView;
 	}	
 	
-	@RequestMapping(value="/userss", method=RequestMethod.PUT)
+	@RequestMapping(value="/users", method=RequestMethod.PUT)
 	public ModelAndView edit(@ModelAttribute User user)
 	{
 		ModelAndView modelAndView = new ModelAndView("forward:/");

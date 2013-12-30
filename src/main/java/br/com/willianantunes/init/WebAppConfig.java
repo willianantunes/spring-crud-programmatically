@@ -36,6 +36,7 @@ public class WebAppConfig
     private static final String PROPERTY_NAME_HIBERNATE_CACHE_PROVIDER_CLASS = "hibernate.cache.provider_class";
     private static final String PROPERTY_NAME_ENTITYMANAGER_PACKAGES_TO_SCAN = "entitymanager.packages.to.scan";
     private static final String PROPERTY_NAME_HIBERNATE_ENABLE_LAZY_LOAD_NO_TRANS = "hibernate.enable_lazy_load_no_trans";
+    private static final String PROPERTY_NAME_HIBERNATE_FORMAT_SQL = "hibernate.format_sql";
     
     @Resource
     private Environment env;
@@ -71,6 +72,7 @@ public class WebAppConfig
 		properties.put(PROPERTY_NAME_HIBERNATE_HBM2DDL_AUTO, env.getRequiredProperty(PROPERTY_NAME_HIBERNATE_HBM2DDL_AUTO));
 		properties.put(PROPERTY_NAME_HIBERNATE_CACHE_PROVIDER_CLASS, env.getRequiredProperty(PROPERTY_NAME_HIBERNATE_CACHE_PROVIDER_CLASS));
 		properties.put(PROPERTY_NAME_HIBERNATE_ENABLE_LAZY_LOAD_NO_TRANS, env.getRequiredProperty(PROPERTY_NAME_HIBERNATE_ENABLE_LAZY_LOAD_NO_TRANS));
+		properties.put(PROPERTY_NAME_HIBERNATE_FORMAT_SQL, env.getRequiredProperty(PROPERTY_NAME_HIBERNATE_FORMAT_SQL));
 		
 		return properties;        
     }

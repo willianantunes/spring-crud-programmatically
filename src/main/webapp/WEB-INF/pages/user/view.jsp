@@ -21,7 +21,7 @@
 
 </c:if>
 
-<form action="<c:url value="/userss" />" name="registerForm" method="post">
+<form action="<c:url value="/users" />" name="registerForm" method="post">
 	<fieldset>
 		<legend>Usuário</legend>
 		<label for="name">Nome</label>
